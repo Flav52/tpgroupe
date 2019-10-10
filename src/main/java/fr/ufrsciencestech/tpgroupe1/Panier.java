@@ -6,11 +6,11 @@ import java.util.Observable;
 
 public class Panier extends Observable {
 
-	private ArrayList<Orange> liste;
+	private ArrayList<FruitSimple> liste;
 	private final int max;
 	
 	public Panier(int m) {
-            liste = new ArrayList<Orange>();
+            liste = new ArrayList<FruitSimple>();
             if(m>0) {
 		max = m;
             }
@@ -46,7 +46,7 @@ public class Panier extends Observable {
 		return false;
 	}
 	
-	public void ajoute(Orange o) throws PanierPleinException {
+	public void ajoute(FruitSimple o) throws PanierPleinException {
 		if(!estPlein()) {
 			liste.add(o);
                         setChanged();
@@ -80,7 +80,7 @@ public class Panier extends Observable {
 	
 	public double getPrix() {
 		double p = 0;
-		for(Orange o : liste) {
+		for(FruitSimple o : liste) {
 			p += o.getPrix();
 		}
 		return p;
@@ -92,7 +92,7 @@ public class Panier extends Observable {
         
         public String toString() {
             String s = "MAX :"+max+"\n";
-            for(Orange p : liste) {
+            for(FruitSimple p : liste) {
                 s += p.toString()+"\n";
             }
             return s;
