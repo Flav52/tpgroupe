@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.183" tests="16" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.179" tests="17" errors="1" skipped="0" failures="0">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="FR"/>
     <property name="sun.boot.library.path" value="/usr/local/jdk1.8.0_221/jre/lib/amd64"/>
-    <property name="sun.java.command" value="/home7/mp861554/GenieLogiciel/Netbeans/tpgroupe/tpgroupe/target/surefire/surefirebooter2719041432472804504.jar /home7/mp861554/GenieLogiciel/Netbeans/tpgroupe/tpgroupe/target/surefire 2019-10-10T11-06-53_388-jvmRun1 surefire5586057684140208959tmp surefire_06438659611035973868tmp"/>
+    <property name="sun.java.command" value="/home7/mp861554/GenieLogiciel/Netbeans/tpgroupe/tpgroupe/target/surefire/surefirebooter7812120012878307831.jar /home7/mp861554/GenieLogiciel/Netbeans/tpgroupe/tpgroupe/target/surefire 2019-10-10T11-38-48_636-jvmRun1 surefire2170827833561356597tmp surefire_03197683589404221772tmp"/>
     <property name="surefire.test.class.path" value="/home7/mp861554/GenieLogiciel/Netbeans/tpgroupe/tpgroupe/target/test-classes:/home7/mp861554/GenieLogiciel/Netbeans/tpgroupe/tpgroupe/target/classes:/home1/mp861554/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home1/mp861554/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home1/mp861554/.m2/repository/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home1/mp861554"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home7/mp861554/GenieLogiciel/Netbeans/tpgroupe/tpgroupe/target/surefire/surefirebooter2719041432472804504.jar"/>
+    <property name="surefire.real.class.path" value="/home7/mp861554/GenieLogiciel/Netbeans/tpgroupe/tpgroupe/target/surefire/surefirebooter7812120012878307831.jar"/>
     <property name="sun.boot.class.path" value="/usr/local/jdk1.8.0_221/jre/lib/resources.jar:/usr/local/jdk1.8.0_221/jre/lib/rt.jar:/usr/local/jdk1.8.0_221/jre/lib/sunrsasign.jar:/usr/local/jdk1.8.0_221/jre/lib/jsse.jar:/usr/local/jdk1.8.0_221/jre/lib/jce.jar:/usr/local/jdk1.8.0_221/jre/lib/charsets.jar:/usr/local/jdk1.8.0_221/jre/lib/jfr.jar:/usr/local/jdk1.8.0_221/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_221-b11"/>
@@ -60,18 +60,23 @@
   </properties>
   <testcase name="testGetPrixPanierPlein3Elements" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.008"/>
   <testcase name="testRetirePanierVide" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.001"/>
-  <testcase name="testEstVide" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.009"/>
-  <testcase name="testGetListe" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
-  <testcase name="testGetPrixPanierVideContMax3" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.001"/>
+  <testcase name="testEstVide" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
+  <testcase name="testGetListe" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.001"/>
+  <testcase name="testGetPrixPanierVideContMax3" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
   <testcase name="testAffiche" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
   <testcase name="testEstPlein" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
-  <testcase name="testToString" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.001"/>
-  <testcase name="testAjoutePanierPlein" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
+  <testcase name="testToString" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
+  <testcase name="testAjoutePanierPlein" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.001"/>
   <testcase name="testBoycottOrigine" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
   <testcase name="testGetNbElements" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
-  <testcase name="testAjoutePanierVide" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
+  <testcase name="testAjoutePanierVideOrange" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
   <testcase name="testAjoutePanierPleinSansParam" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
+  <testcase name="testAjoute2Fruits" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.005">
+    <error message="Unexpected exception, expected&lt;fr.ufrsciencestech.tpgroupe1.PanierPleinException&gt; but was&lt;java.lang.AssertionError&gt;" type="java.lang.Exception"><![CDATA[java.lang.Exception: Unexpected exception, expected<fr.ufrsciencestech.tpgroupe1.PanierPleinException> but was<java.lang.AssertionError>
+	at fr.ufrsciencestech.tpgroupe1.PanierTest.testAjoute2Fruits(PanierTest.java:143)
+]]></error>
+  </testcase>
   <testcase name="testEquals" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
-  <testcase name="testGetMax" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
-  <testcase name="testSetListe" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.002"/>
+  <testcase name="testGetMax" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.001"/>
+  <testcase name="testSetListe" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
 </testsuite>

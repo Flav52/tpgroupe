@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
  */
 public class FruitSimpleTest {
     
-    private FruitSimple f1, f2, f3, f4;
+    private FruitSimple f1, f2, f3, f4, f5, f6;
     
     public FruitSimpleTest() {
     }
@@ -37,6 +37,8 @@ public class FruitSimpleTest {
         f2= new Orange(15,"France");
         f3= new Orange(13,"Suisse");
         f4= new Banane(13,"Suisse");
+        f5= new Cerise(13,"Suisse");
+        f6= new Cerise(12,"Suisse");
     }
     
     @After
@@ -106,6 +108,7 @@ public class FruitSimpleTest {
     public void testEquals() {
         assertEquals(true,f2.equals(f1));
         assertEquals(false,f4.equals(f3));
+       
     }
 
     public class FruitSimpleImpl extends FruitSimple {

@@ -28,4 +28,19 @@ public class Cerise extends FruitSimple{
         return "Cette cerise de "+this.getOrigine()+" coûte "+this.getPrix()+"€";
     }
     
+    @Override
+    public boolean equals(Object o) { 
+        if (o == this) { 
+            return true; 
+        } 
+        
+        if (!(o instanceof Cerise)) { 
+            return false; 
+        } 
+            
+        Cerise c = (Cerise) o; 
+          
+        return this.getOrigine().equals(c.getOrigine()) && this.getPrix()==c.getPrix();
+    } 
+    
 }

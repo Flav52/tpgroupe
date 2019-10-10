@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: fr.ufrsciencestech.tpgroupe1.PanierTest
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.177 s - in fr.ufrsciencestech.tpgroupe1.PanierTest
+Tests run: 17, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.179 s <<< FAILURE! - in fr.ufrsciencestech.tpgroupe1.PanierTest
+testAjoute2Fruits(fr.ufrsciencestech.tpgroupe1.PanierTest)  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<fr.ufrsciencestech.tpgroupe1.PanierPleinException> but was<java.lang.AssertionError>
+	at fr.ufrsciencestech.tpgroupe1.PanierTest.testAjoute2Fruits(PanierTest.java:143)
+
