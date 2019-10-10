@@ -41,4 +41,17 @@ public abstract class FruitSimple {
     
     public abstract String toString();
     
+    @Override
+    public boolean equals(Object o) { 
+        if (o == this) { 
+            return true; 
+        } 
+          if (!(o instanceof FruitSimple)) { 
+            return false; 
+        } 
+        FruitSimple c = (FruitSimple) o; 
+          
+        return this.getOrigine().equals(c.getOrigine()) && this.getPrix()==c.getPrix();
+    }
+    
 }

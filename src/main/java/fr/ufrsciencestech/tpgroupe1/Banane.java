@@ -29,4 +29,17 @@ public class Banane extends FruitSimple {
     public String toString() {
 	return "Cette banane de "+this.getOrigine()+" coûte "+this.getPrix()+"€";
     }
+    
+    @Override
+    public boolean equals(Object o) { 
+        if (o == this) { 
+            return true; 
+        } 
+          if (!(o instanceof Banane)) { 
+            return false; 
+        } 
+        Banane c = (Banane) o; 
+          
+        return this.getOrigine().equals(c.getOrigine()) && this.getPrix()==c.getPrix();
+    } 
 }
