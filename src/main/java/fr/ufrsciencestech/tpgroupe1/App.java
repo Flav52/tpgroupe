@@ -15,7 +15,7 @@ public class App {
   
     public static void main(String[] args) throws PrixNegatifException, PanierPleinException {
         vueGraph = new VueGraphique();
-        Panier p = new Panier(5);
+        Panier p = new Panier(20);
         p.ajoute(new Orange(0.8,"Ouais"));
         Controleur c = new Controleur();
         c.setPanier(p);

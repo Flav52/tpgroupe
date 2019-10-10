@@ -1,6 +1,7 @@
 
 package fr.ufrsciencestech.tpgroupe1;
 
+import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;
 import javax.swing.JButton;
@@ -12,22 +13,48 @@ public class VueGraphique extends javax.swing.JFrame implements Observer {
     public VueGraphique() {
         initComponents();
         inc.setName("Plus");
+        inc.setText("+");
         dec.setName("Moins");
+        jComboBox1.setName("CBfruit");
         this.pack();
         this.setVisible(true);
     }
 
     public void ajoutControleur(Controleur c) {
         c.getPanier().addObserver(this);
-        affiche.setText(Integer.toString(c.getPanier().getNbElements()));
+        //affiche.setText(Integer.toString(c.getPanier().getNbElements()));
         inc.addActionListener(c);
         dec.addActionListener(c);
+        jComboBox1.addActionListener(c);
     }    
     
     @Override
     public void update(Observable o, Object arg) {
         
-        affiche.setText(Integer.toString(((Panier) o).getNbElements()));
+        ArrayList<FruitSimple> pan = ((Panier)o).getListe();
+        int nbOrange = 0;
+        int nbBanane = 0;
+        int nbCerise = 0;
+        int total=0;
+       
+        
+        for(FruitSimple fru : pan){
+            String type = fru.getClass().toString();
+            total++;
+            switch(type){
+                case "Banane":
+                        nbBanane++;
+                        break;
+                    /*case "Cerise":
+                        nbCerise++;
+                        break;*/
+                    default:
+                        nbOrange++;
+                        break;
+                }
+        }
+        
+        affiche.setText(" Banane : "+nbBanane+" \n Cerise : "+nbCerise+" \n Orange : "+nbOrange+" \n\n Total : "+total);
     }
 
     public JTextArea getAffiche() {
@@ -69,13 +96,14 @@ public class VueGraphique extends javax.swing.JFrame implements Observer {
         jPanel1.setLayout(new java.awt.GridLayout(1, 4));
         jPanel1.add(jPanel5);
 
-        inc.setText("+");
         inc.setMaximumSize(new java.awt.Dimension(100, 100));
         inc.setMinimumSize(new java.awt.Dimension(0, 0));
+        inc.setName("Plus"); // NOI18N
         inc.setPreferredSize(new java.awt.Dimension(30, 25));
         jPanel1.add(inc);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Orange", "Banane", "Cerise" }));
+        jComboBox1.setName("CBfruit"); // NOI18N
         jPanel1.add(jComboBox1);
         jPanel1.add(jPanel4);
 
