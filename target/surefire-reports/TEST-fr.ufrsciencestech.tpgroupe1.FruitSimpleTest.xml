@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.171" tests="17" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="fr.ufrsciencestech.tpgroupe1.FruitSimpleTest" time="0" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -58,25 +58,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testGetPrixPanierPlein3Elements" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.009"/>
-  <testcase name="testRetirePanierVide" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.001"/>
-  <testcase name="testEstVide" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
-  <testcase name="testGetListe" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
-  <testcase name="testGetPrixPanierVideContMax3" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
-  <testcase name="testAffiche" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
-  <testcase name="testEstPlein" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.001"/>
-  <testcase name="testToString" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
-  <testcase name="testAjoutePanierPlein" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
-  <testcase name="testBoycottOrigine" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.001"/>
-  <testcase name="testGetNbElements" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
-  <testcase name="testAjoutePanierVideOrange" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
-  <testcase name="testAjoutePanierPleinSansParam" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.001"/>
-  <testcase name="testAjoute2Fruits" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.004">
-    <error message="Unexpected exception, expected&lt;fr.ufrsciencestech.tpgroupe1.PanierPleinException&gt; but was&lt;java.lang.AssertionError&gt;" type="java.lang.Exception"><![CDATA[java.lang.Exception: Unexpected exception, expected<fr.ufrsciencestech.tpgroupe1.PanierPleinException> but was<java.lang.AssertionError>
-	at fr.ufrsciencestech.tpgroupe1.PanierTest.testAjoute2Fruits(PanierTest.java:143)
-]]></error>
-  </testcase>
-  <testcase name="testEquals" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
-  <testcase name="testGetMax" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0.001"/>
-  <testcase name="testSetListe" classname="fr.ufrsciencestech.tpgroupe1.PanierTest" time="0"/>
+  <testcase name="testAffiche" classname="fr.ufrsciencestech.tpgroupe1.FruitSimpleTest" time="0"/>
+  <testcase name="testToString" classname="fr.ufrsciencestech.tpgroupe1.FruitSimpleTest" time="0"/>
+  <testcase name="testGetOrigine" classname="fr.ufrsciencestech.tpgroupe1.FruitSimpleTest" time="0"/>
+  <testcase name="testIsSeedless" classname="fr.ufrsciencestech.tpgroupe1.FruitSimpleTest" time="0"/>
+  <testcase name="testGetPrix" classname="fr.ufrsciencestech.tpgroupe1.FruitSimpleTest" time="0"/>
+  <testcase name="testSetOrigine" classname="fr.ufrsciencestech.tpgroupe1.FruitSimpleTest" time="0"/>
+  <testcase name="testEquals" classname="fr.ufrsciencestech.tpgroupe1.FruitSimpleTest" time="0"/>
+  <testcase name="testSetPrix" classname="fr.ufrsciencestech.tpgroupe1.FruitSimpleTest" time="0"/>
 </testsuite>

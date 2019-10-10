@@ -26,9 +26,9 @@ public class Controleur implements ActionListener {
                         case "Banane":
                             fruit = new Banane(0.6, "Madagascar");
                             break;
-                        /*case "Cerise":
+                        case "Cerise":
                             fruit = new Cerise(0.25, "France");
-                            break;*/
+                            break;
                         default:
                             fruit = new Orange(0.5, "Espagne");
                             break;

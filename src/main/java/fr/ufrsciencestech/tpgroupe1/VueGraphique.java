@@ -42,12 +42,12 @@ public class VueGraphique extends javax.swing.JFrame implements Observer {
             String type = fru.getClass().toString();
             total++;
             switch(type){
-                case "Banane":
+                case "class fr.ufrsciencestech.tpgroupe1.Banane":
                         nbBanane++;
                         break;
-                    /*case "Cerise":
+                    case "class fr.ufrsciencestech.tpgroupe1.Cerise":
                         nbCerise++;
-                        break;*/
+                        break;
                     default:
                         nbOrange++;
                         break;

@@ -41,4 +41,6 @@ public abstract class FruitSimple {
     
     public abstract String toString();
     
+    
+    
 }

@@ -21,4 +21,19 @@ public class Orange extends FruitSimple {
     public String toString() {
 	return "Cette orange de "+this.getOrigine()+" coûte "+this.getPrix()+"€";
     }
+    
+    @Override
+    public boolean equals(Object o) { 
+        if (o == this) { 
+            return true; 
+        } 
+        
+        if (!(o instanceof Orange)) { 
+            return false; 
+        } 
+            
+        Orange c = (Orange) o; 
+          
+        return this.getOrigine().equals(c.getOrigine()) && this.getPrix()==c.getPrix();
+    } 
 }
